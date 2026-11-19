@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: enJMLX95
+Version: 1.0.0
+Summary: enJMLX stands for Encoding using JSON Mapped Lexicon. This is the 95-Character version
+Author-email: Aarsh Garg <aarshg.13@gmail.com>
+Project-URL: Homepage, https://github.com/AarshGarg2011Code/enJMLX-95
+Keywords: encoding,JSON,coordinates,ASCII
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# enJMLX-95
+### The enJMLX - Encoding using JSON Mapped Lexicon. 95-Characters version.
+
+#### enJMLX is a special encoding developed by me, Aarsh Garg, that uses a JSON Map to encode or decode characters.
+#### This version of enJMLX supports 95 printable characters from 7-bit ASCII.
+#### There are 2 JSONs used in this encoding:
+- 1 - The Map JSON (map.json)
+- 2 - The Coordinates JSON (coordinates.json)
+##### As you all might've guessed, the map JSON has the full map with abscissa and ordinates, and the coordinates JSON contains coordinates for all 95 characters in the map.
+
+#### enJMLX then uses the concept of Ordinate-Abscissa:
+Every character in this encoding has a coordinate, with its ordinate first and abscissa after.
+
+The Ordinate can range from 0.. 1.. 2.. 3.. 4.. A.. B.. C.. till I.
+
+The Abscissa can be in 0, 1, 2, 3, and 4.
+
+The map is a 19x5 grid layout, which multiplies to 95.
+
+In the JSON, there are 19 keys (ordinates) with their values as lists.
+
+Each list is of 5 characters (abscissa).
+
+This layout is stored in the Map JSON.
+
+In the Coordinates JSON, there are just the coordinates of each character to point where that character is in the Map JSON.
+
+The Coordinates JSON is used to encode, while the Map JSON is used to decode.
+
+#### enJMLX's codes are two-character codes with the ordinate and then abscissa paired.
+The first digit of the code represents the Ordinate.
+
+The second digit of the code represents the Abscissa.
+
+The first digit is Base-19, while the second digit is Base-5.
+
+In an encoded string, each code is separated with a string.
+
+The Encoder uses the coordinates JSON to encode the strings by replacing each character with it's coordinate turned into a code.
+
+The Decoder can then read the codes off an encoded string, and map them in the map JSON, to find it's characters and return the original string.
+
+### This is enJMLX-95 made by Aarsh Garg in 2026.

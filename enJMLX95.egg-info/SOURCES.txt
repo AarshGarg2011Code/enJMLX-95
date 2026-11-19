@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+enJMLX95/__init__.py
+enJMLX95/__main__.py
+enJMLX95/coordinates.json
+enJMLX95/decoder.py
+enJMLX95/encoder.py
+enJMLX95/map.json
+enJMLX95.egg-info/PKG-INFO
+enJMLX95.egg-info/SOURCES.txt
+enJMLX95.egg-info/dependency_links.txt
+enJMLX95.egg-info/top_level.txt
